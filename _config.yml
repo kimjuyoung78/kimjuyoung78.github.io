@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Iris # the main title
 
-tagline: |
+tagline: |+
   Frontend.log
   개발 발자취를 남기는 곳입니다.
 
@@ -24,7 +24,7 @@ description: "개발 발자취를 남기는 곳입니다. A minimal, responsive 
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://kimjuyoung78.github.io/"
+url: "https://kimjuyoung78.github.io"
 
 github:
   username: kimjuyoung78 # change to your GitHub username
@@ -39,11 +39,11 @@ social:
   email: jjassb404@naver.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # - https://twitter.com/username # change to your Twitter homepage
+    - https://github.com/kimjuyoung78 # change to your Twitter homepage
     - https://github.com/kimjuyoung78 # change to your GitHub homepage
     # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://github.com/kimjuyoung78
+    - https://github.com/kimjuyoung78
 
 # Site Verification Settings
 webmaster_verifications:
