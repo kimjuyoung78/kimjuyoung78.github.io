@@ -53,27 +53,34 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     @extend %sidebar-links;
   }
 
-  #avatar {
-    display: block;
-    width: 6.5rem;
-    height: 6.5rem;
-    overflow: hidden;
-    box-shadow: var(--avatar-border-color) 0 0 0 2px;
-    transform: translateZ(0); /* fixed the zoom in Safari */
+#avatar {
+    display: flex; /* Flexbox로 정렬 */
+    justify-content: center; /* 가로 방향 중앙 정렬 */
+    align-items: center; /* 세로 방향 중앙 정렬 */
+    width: 6.5rem; /* 아바타 컨테이너 너비 */
+    height: 6.5rem; /* 아바타 컨테이너 높이 */
+    overflow: hidden; /* 컨테이너 밖으로 넘치는 이미지를 숨김 */
+    box-shadow: var(--avatar-border-color) 0 0 0 2px; /* 테두리 효과 */
+    border-radius: 50%; /* 원형 모양 */
+    transform: translateZ(0); /* Safari 줌 문제 해결 */
 
     @include bp.sm {
-      width: 7rem;
-      height: 7rem;
+        width: 7rem;
+        height: 7rem;
     }
 
     img {
-      transition: transform 0.5s;
+        width: 100%; /* 이미지가 컨테이너 너비를 채우도록 설정 */
+        height: 100%; /* 이미지가 컨테이너 높이를 채우도록 설정 */
+        object-fit: cover; /* 컨테이너에 맞게 이미지를 자름 */
+        transition: transform 0.5s; /* 호버 시 부드러운 확대 효과 */
 
-      &:hover {
-        transform: scale(1.2);
-      }
+        &:hover {
+            transform: scale(1.2); /* 호버 시 이미지 확대 */
+        }
     }
-  }
+}
+
 
   .profile-wrapper {
     @include mx.mt-mb(2.5rem);
