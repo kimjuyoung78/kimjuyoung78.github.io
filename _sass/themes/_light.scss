@@ -1,6 +1,6 @@
 @mixin styles {
   /* Framework color */
-  --main-bg: linear-gradient(135deg, #E8FFFF, #E4D7FF, #F5CBFF);
+  --main-bg: linear-gradient(135deg, #E8FFFF, #E8FFFF, #E4D7FF, #F5CBFF);
   --mask-bg: #c1c3c5;
   --main-border-color: #00b4d8;
 
@@ -35,12 +35,12 @@
   /* Sidebar */
   --site-title-color: rgb(113, 113, 113);
   --site-subtitle-color: #717171;
-  --sidebar-bg: #B7E2EA;
+  --sidebar-bg: white;
   --sidebar-border-color: #efefef;
   --sidebar-muted-color: #545454;
   --sidebar-active-color: #1d1d1d;
   --sidebar-hover-bg: rgb(223, 233, 241, 0.64);
-  --sidebar-btn-bg: #E8FFFF;
+  --sidebar-btn-bg: white;
   --sidebar-btn-color: #8e8e8e;
   --avatar-border-color: #E8FFFF;
 
