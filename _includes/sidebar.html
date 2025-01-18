@@ -53,10 +53,17 @@
 
     {% for entry in site.data.contact %}
       {% case entry.type %}
-        {% when 'github', 'twitter' %}
+          {% when 'github' %}
+            {%- capture url -%}
+              https://{{ entry.type }}.com/{{ site[entry.type].username }}
+            {%- endcapture -%}
+          {# Uncomment the following block to enable Twitter #}
+        {#
+        {% when 'twitter' %}
           {%- capture url -%}
             https://{{ entry.type }}.com/{{ site[entry.type].username }}
           {%- endcapture -%}
+        #}
         {% when 'email' %}
           {% assign email = site.social.email | split: '@' %}
           {%- capture url -%}
