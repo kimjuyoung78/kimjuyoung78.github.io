@@ -16,9 +16,10 @@ timezone: Asia/Seoul
 
 title: Iris # the main title
 
-tagline: |+
-  Frontend.log
+tagline: |
+  Frontend.log  
   개발 발자취를 남기는 곳입니다.
+
 
 description: "개발 발자취를 남기는 곳입니다. A minimal, responsive and feature-rich Jekyll theme for technical writing."
 
