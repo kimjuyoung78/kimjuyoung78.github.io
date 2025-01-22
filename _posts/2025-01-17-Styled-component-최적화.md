@@ -3,7 +3,7 @@ author: 주영
 date: 2025-01-17 17:10:00 +0800
 last_modified_at: 2025-01-17 20:00:00 +0900
 categories: [Develop]
-tags: [DDang(댕댕), 효율화]
+tags: [DDang(댕댕) Project, React]
 render_with_liquid: false
 ---
 DDang 프로젝트 개발 중 소셜로그인 파트를 맡아 구현하고 있었다. 
