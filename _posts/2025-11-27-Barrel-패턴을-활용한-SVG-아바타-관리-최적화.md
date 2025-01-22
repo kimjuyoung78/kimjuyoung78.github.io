@@ -26,8 +26,8 @@ Barrel 패턴은 여러 모듈의 export를 하나의 진입점(entry point)으�
 
 **구현 방식**
 
-- 특정 폴더에 index.ts(또는 index.js) 파일을 생성합니다
-- 이 파일에서 해당 폴더의 다른 파일들을 re-export 합니다[3](https://basarat.gitbook.io/typescript/main-1/barrel)
+- 특정 폴더에 index.ts(또는 index.js) 파일을 생성한다.
+- 이 파일에서 해당 폴더의 다른 파일들을 re-export 한다.
 
 ## **장점**
 
@@ -38,7 +38,6 @@ Barrel 패턴은 여러 모듈의 export를 하나의 진입점(entry point)으�
 ### **1. 파일 구조 최적화**
 
 ![alt text](image.png)
-
 우선 svg 파일을 모아놓는 assets폴더에 avatars 하위 폴더를 하나 더 생성하고 Avatar1~10을 모조리 넣는다. 
 
 avatars 폴더 내부에 index.ts 파일을 하나 생성하여 해당 파일에 10개의 import를 모아서 한꺼번에 export한다.
@@ -57,12 +56,6 @@ assets/
 <br><br>
 ### **2. Barrel 파일 구현**
 
-```jsx
-*// assets/avatars/index.ts*
-export { default as Avatar1 } from './Avatar1.svg'
-export { default as Avatar2 } from './Avatar2.svg'
-*// ... Avatar3-10*
-```
 
 ![alt text](image-1.png)
 
@@ -173,7 +166,6 @@ Barrel 패턴을 적용하는 것은 위에 설명한 대로 많은 장점이 �
   <img src="20241127_132540.gif" width="45%" style="margin-right: 10px"/>
   <img src="20241127_132601.gif" width="45%"/>
 </div>
-
 
 
 svg 파일 가져와서 UI 깔끔하게 완성!
