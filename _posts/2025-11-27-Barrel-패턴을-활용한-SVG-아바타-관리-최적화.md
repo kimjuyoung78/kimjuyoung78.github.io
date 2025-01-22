@@ -163,8 +163,8 @@ Barrel 패턴을 적용하는 것은 위에 설명한 대로 많은 장점이 �
 <br><br>
 
 <div style="display: flex; justify-content: center;">
-  <img src="20241127_132540.gif" width="45%" style="margin-right: 10px"/>
-  <img src="20241127_132601.gif" width="45%"/>
+  <img src="20241127_132540.gif" width="45%" style="margin-right: 10px" alt="아바타 선택 모달 UI 데모"/>
+  <img src="20241127_132601.gif" width="45%" alt="아바타 선택 모달 UI 데모"/>
 </div>
 
 
