@@ -36,8 +36,8 @@ Barrel 패턴은 여러 모듈의 export를 하나의 진입점(entry point)으�
 - **코드 정리**: 관련된 컴포넌트나 모듈을 논리적으로 그룹화할 수 있다. 
 
 ### **1. 파일 구조 최적화**
+<img src="https://github.com/user-attachments/assets/beb10297-f15b-459c-bf1a-56b1ef7692d5" width="30%" alt="이미지 설명">
 
-![alt text](image.png)
 우선 svg 파일을 모아놓는 assets폴더에 avatars 하위 폴더를 하나 더 생성하고 Avatar1~10을 모조리 넣는다. 
 
 avatars 폴더 내부에 index.ts 파일을 하나 생성하여 해당 파일에 10개의 import를 모아서 한꺼번에 export한다.
@@ -56,8 +56,8 @@ assets/
 <br><br>
 ### **2. Barrel 파일 구현**
 
+<img src="https://github.com/user-attachments/assets/a4d43987-4f22-4925-a59c-6e955e29e2df" width="50%" alt="이미지 설명">
 
-![alt text](image-1.png)
 
 인덱스 파일을 코드는 다음과 같다. 
 <br>
@@ -163,8 +163,8 @@ Barrel 패턴을 적용하는 것은 위에 설명한 대로 많은 장점이 �
 <br><br>
 
 <div style="display: flex; justify-content: center;">
-  <img src="20241127_132540.gif" width="45%" style="margin-right: 10px" alt="아바타 선택 모달 UI 데모"/>
-  <img src="20241127_132601.gif" width="45%" alt="아바타 선택 모달 UI 데모"/>
+  <img src="https://github.com/user-attachments/assets/001bf554-c246-4e4a-b0e8-38cec803da21" width="35%" style="margin-right: 10px" alt="아바타 선택 모달 UI 데모"/>
+  <img src="https://github.com/user-attachments/assets/d4d8c74e-4353-4526-b277-5803ca82655f" width="35%" alt="아바타 선택 모달 UI 데모"/>
 </div>
 
 
