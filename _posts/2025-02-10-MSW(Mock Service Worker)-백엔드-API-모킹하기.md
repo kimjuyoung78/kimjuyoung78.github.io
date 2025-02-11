@@ -54,7 +54,8 @@ Mock Service Worker 의 줄임말로, 서비스 워커(Service Worker) 기술을
 <br><br><br>
 ## 적용해보기
 
-우선, 전제 데이터 흐름도이다.
+우선, 적용하고자 하는 코드의 전제 데이터 흐름도이다.
+가족 구성원 데이터를 배열 형태로 받아와 랜더링 시킬 것이다.
 <br>
 
 <img src="https://github.com/user-attachments/assets/63159a81-735b-48a0-8881-f989ee4e3e37" alt="image" width="500">
