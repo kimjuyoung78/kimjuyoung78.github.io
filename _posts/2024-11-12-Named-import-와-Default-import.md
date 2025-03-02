@@ -1,4 +1,4 @@
-<img width="672" alt="image" src="https://github.com/user-attachments/assets/dbfa9261-9423-4ae2-b350-3d2f4301d420" />---
+---
 author: 주영
 date: 2024-11-12 19:10:00 +0800
 categories: [Concept]
