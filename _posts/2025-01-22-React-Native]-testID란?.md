@@ -22,8 +22,13 @@ render_with_liquid: false
 2. **테스트 안정성 강화**: UI 구조 변경에도 영향을 덜 받으므로 테스트 코드의 유지보수가 용이하다.
 3. **효율적인 컴포넌트 선택**: **getByTestId**와 같은 메서드를 통해 빠르고 정확하게 요소를 탐색할 수 있다.
 
-내 프로젝트 코드의 예시로 알아보자 Profile 공통 컴포넌트를 제작하였다.
-
+<br><br>
+물론 React에서도 유사한 개념이 있다. React에는 **'data-testid'** 속성을 사용하여 비슷한 목적을 달성한다.
+<br>
+<br>
+<br>
+내 프로젝트 코드의 예시로 알아보자. Profile 공통 컴포넌트를 제작하였다.
+<br>
 
 <img width="126" alt="image" src="https://github.com/user-attachments/assets/44610850-ef10-4716-b752-70bccdc5e26a" />
  <br>컴포넌트는 요렇게 생겼다.
