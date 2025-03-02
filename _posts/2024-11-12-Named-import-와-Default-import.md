@@ -90,7 +90,7 @@ import { ToggleArea } from '~components/ToggleArea'
 
 ### Named export 예시
 
-```typescripts
+```jsx
 // React hooks
 import { useState, useEffect, useContext } from 'react';
 
@@ -111,7 +111,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 ### Default export 예시
 
-```typescripts
+```jsx
 // React
 import React from 'react';
 
