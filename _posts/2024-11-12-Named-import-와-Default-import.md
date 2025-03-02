@@ -139,7 +139,7 @@ import styles from './styles/main.css';
 
 ### 혼합사용하는 경우
 
-```typescripts
+```jsx
 // React and hooks
 import React, { useState, useEffect } from 'react';
 
