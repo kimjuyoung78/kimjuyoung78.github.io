@@ -1,4 +1,4 @@
----
+<img width="672" alt="image" src="https://github.com/user-attachments/assets/dbfa9261-9423-4ae2-b350-3d2f4301d420" />---
 author: 주영
 date: 2024-11-12 19:10:00 +0800
 categories: [Concept]
@@ -187,31 +187,12 @@ import MyModule, { helperFunction, CONSTANT_VALUE } from './MyModule';
 우리 DDang 프로젝트 팀도 코드 컨벤션으로 화살표 함수의 Named Export, Import 방식을 채택해서 쓰고 있다.
 
 <br/>
-<br/> 여러 export, import 사례를 표로 살펴보자! <table> <tr> <th>함수 유형</th> <th>Export 방식</th> <th>Import 방식</th> <th>예시 코드</th> </tr> <tr> <td rowspan="2">함수 선언</td> <td>Named Export</td> <td>Named Import</td> <td><pre> export function MyComponent() { return &lt;div&gt;My Component&lt;/div&gt;; }
-import { MyComponent } from './MyComponent';
-</pre></td>
+<br/> 여러 export, import 사례를 표로 살펴보자! 
 
-</tr> <tr> <td>Default Export</td> <td>Default Import</td> <td><pre> export default function MyComponent() { return &lt;div&gt;My Component&lt;/div&gt;; }
-import MyComponent from './MyComponent';
-</pre></td>
+<br/>
+<img width="672" alt="image" src="https://github.com/user-attachments/assets/fef8cf78-2f5f-4241-b124-75d0770d2cfa" />
 
-</tr> <tr> <td rowspan="2">함수 표현식</td> <td>Named Export</td> <td>Named Import</td> <td><pre> const MyComponent = function() { return &lt;div&gt;My Component&lt;/div&gt;; } export { MyComponent };
-import { MyComponent } from './MyComponent';
-</pre></td>
 
-</tr> <tr> <td>Default Export</td> <td>Default Import</td> <td><pre> const MyComponent = function() { return &lt;div&gt;My Component&lt;/div&gt;; } export default MyComponent;
-import MyComponent from './MyComponent';
-</pre></td>
-
-</tr> <tr> <td rowspan="2">화살표 함수</td> <td>Named Export</td> <td>Named Import</td> <td><pre> export const MyComponent = () => { return &lt;div&gt;My Component&lt;/div&gt;; }
-import { MyComponent } from './MyComponent';
-</pre></td>
-
-</tr> <tr> <td>Default Export</td> <td>Default Import</td> <td><pre> const MyComponent = () => { return &lt;div&gt;My Component&lt;/div&gt;; } export default MyComponent;
-import MyComponent from './MyComponent';
-</pre></td>
-
-</tr> </table>
 
 <br/><br/>
 두 개념을 표로 정리해보면 다음과 같다
