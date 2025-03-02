@@ -10,7 +10,7 @@ render_with_liquid: false
 <br/>
 <br/>
 
-Toggle 공통 컴포넌트를 import 해서 사용하는 와중..
+Toggle 공통 컴포넌트를 import 해서 사용하는 와중...
 
 <img src="https://github.com/user-attachments/assets/6467fdf8-18e5-4881-820c-a5b5acab6208" alt="image" width="350">
 
