@@ -54,7 +54,7 @@ import ToggleArea from '~components/ToggleArea'
 <br/>
 
 **[2] Named Export**
-
+<br/>
 ```jsx
 *// 여러 개 가능*
 export function ToggleArea() {
@@ -64,6 +64,27 @@ export function ToggleArea() {
 *// 임포트 시*
 import { ToggleArea } from '~components/ToggleArea'
 ```
+
+**[2] Named Export**
+- 한 파일에서 default export와 named export를 동시에 사용할 수도 있다.
+
+```jsx
+// MyComponent.js
+export const AnotherComponent = () => {
+  return <div>Another Component</div>;
+};
+
+const MyComponent = () => {
+  return <div>Hello, World!</div>;
+};
+
+export default MyComponent;
+
+// App.js
+import MyComponent, { AnotherComponent } from './MyComponent';
+```
+
+
 <br/>
 <br/>
 <br/>
@@ -157,7 +178,44 @@ import MyModule, { helperFunction, CONSTANT_VALUE } from './MyModule';
 <br/>
 <br/>
 
-표로 정리해보면 다음과 같다
+즉, 함수 표현식의 종류(함수 선언, 함수 표현식, 화살표 함수)는 React 컴포넌트의 import 방식에 영향을 미치지 않는다. 
+
+대신 `default` 로 export 했는지 `named`로 export했는지가 import 방식을 결정한다.
+
+실무에서는 화살표 함수를 가장 많이 쓴다고 한다. 비교적 간결한 문법으로 이루어져 있고, 기존 함수 표현식보다 훨씬 직관적이기 때문이다.
+
+우리 DDang 프로젝트 팀도 코드 컨벤션으로 화살표 함수의 Named Export, Import 방식을 채택해서 쓰고 있다.
+
+<br/>
+<br/> 여러 export, import 사례를 표로 살펴보자! <table> <tr> <th>함수 유형</th> <th>Export 방식</th> <th>Import 방식</th> <th>예시 코드</th> </tr> <tr> <td rowspan="2">함수 선언</td> <td>Named Export</td> <td>Named Import</td> <td><pre> export function MyComponent() { return &lt;div&gt;My Component&lt;/div&gt;; }
+import { MyComponent } from './MyComponent';
+</pre></td>
+
+</tr> <tr> <td>Default Export</td> <td>Default Import</td> <td><pre> export default function MyComponent() { return &lt;div&gt;My Component&lt;/div&gt;; }
+import MyComponent from './MyComponent';
+</pre></td>
+
+</tr> <tr> <td rowspan="2">함수 표현식</td> <td>Named Export</td> <td>Named Import</td> <td><pre> const MyComponent = function() { return &lt;div&gt;My Component&lt;/div&gt;; } export { MyComponent };
+import { MyComponent } from './MyComponent';
+</pre></td>
+
+</tr> <tr> <td>Default Export</td> <td>Default Import</td> <td><pre> const MyComponent = function() { return &lt;div&gt;My Component&lt;/div&gt;; } export default MyComponent;
+import MyComponent from './MyComponent';
+</pre></td>
+
+</tr> <tr> <td rowspan="2">화살표 함수</td> <td>Named Export</td> <td>Named Import</td> <td><pre> export const MyComponent = () => { return &lt;div&gt;My Component&lt;/div&gt;; }
+import { MyComponent } from './MyComponent';
+</pre></td>
+
+</tr> <tr> <td>Default Export</td> <td>Default Import</td> <td><pre> const MyComponent = () => { return &lt;div&gt;My Component&lt;/div&gt;; } export default MyComponent;
+import MyComponent from './MyComponent';
+</pre></td>
+
+</tr> </table>
+
+<br/><br/>
+두 개념을 표로 정리해보면 다음과 같다
+<br/>
 <br/>
 
 | 특징 | Named Import | Default Import |
