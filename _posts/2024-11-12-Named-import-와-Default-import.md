@@ -12,7 +12,7 @@ render_with_liquid: false
 
 Toggle 공통 컴포넌트를 import 해서 사용하는 와중, import 방식이 헷갈려 한번 정리해 보고자 한다.
 
-<img src='https://github.com/user-attachments/assets/6467fdf8-18e5-4881-820c-a5b5acab6208' width=40% />
+<img src="https://github.com/user-attachments/assets/6467fdf8-18e5-4881-820c-a5b5acab6208" width=40% />
 
 <br/>
 <br/>
