@@ -4,6 +4,7 @@ date: 2024-11-27 17:10:00 +0800
 categories: [Develop]
 tags: [DDang(댕댕) Project, React]
 render_with_liquid: false
+image: assets/img/react.png
 ---
 
 Barrel export 패턴 적용해서 import 깔끔하게 정리하기
