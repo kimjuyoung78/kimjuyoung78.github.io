@@ -5,6 +5,7 @@ last_modified_at: 2025-01-17 20:00:00 +0900
 categories: [Develop]
 tags: [DDang(댕댕) Project, ReactNative]
 render_with_liquid: false
+image: assets/img/react.png
 ---
 
 <br><br>
