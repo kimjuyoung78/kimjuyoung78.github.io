@@ -5,7 +5,7 @@ last_modified_at: 2025-02-10 20:00:00 +0900
 categories: [Develop]
 tags: [DDang(댕댕) Project, ReactNative, MSW, 생산성]
 render_with_liquid: false
-image: image: assets/img/msw.png
+image: assets/img/msw.png
 ---
 
 
