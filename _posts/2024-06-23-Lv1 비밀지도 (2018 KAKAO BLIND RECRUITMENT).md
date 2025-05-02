@@ -4,7 +4,7 @@ date: 2024-06-23 11:40:00 +0800
 categories: [Algorithm]
 tags: [Algorithm, Javascript]
 render_with_liquid: false
-image: assets/img/vite.png
+image: assets/img/programmers.jpg
 ---
 # [프로그래머스] 비밀지도 - JS 풀이 및 함수 분해
 
